@@ -241,7 +241,9 @@ export default class Note extends React.Component {
       color,
       titleColor,
       labelColor,
-      bgPadding
+      bgPadding,
+      noteTextSize,
+      titleTextSize
     } = this.props
 
     let bgPaddingFinal = { top: 0, bottom: 0, left: 0, right: 0 }
@@ -266,6 +268,7 @@ export default class Note extends React.Component {
           fontWeight="bold"
           key="title"
           fill={titleColor || color}
+          fontSize={titleTextSize}
         >
           {this.state.titleWrapped || (
             <tspan x={0} dy=".8em">
@@ -284,6 +287,7 @@ export default class Note extends React.Component {
           y={this.state.labelOffset * 1.1}
           key="label"
           fill={labelColor || color}
+          fontSize={noteTextSize}
         >
           {this.state.labelWrapped || (
             <tspan x={0} dy=".8em">
