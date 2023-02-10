@@ -70,7 +70,7 @@
     "LICENSE",
     "README.md",
     "CHANGELOG.md",
-    "src/components"
+    "lib"
   ],
   "keywords": [
     "react",
