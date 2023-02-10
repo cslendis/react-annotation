@@ -70,7 +70,8 @@
     "LICENSE",
     "README.md",
     "CHANGELOG.md",
-    "lib"
+    "lib",
+    ".babelrc"
   ],
   "keywords": [
     "react",
